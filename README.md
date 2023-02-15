@@ -27,7 +27,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p>
 SETUP RESOURCES IN AZURE
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/VrnWfp0.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 In this step I created two Virtual Machines. One VM named DC1 (domain controller) and the other named client1.
@@ -37,10 +37,12 @@ In this step I created two Virtual Machines. One VM named DC1 (domain controller
 <p>
 CONFIRM CONNECTIVITY BETWEEN BOTH VMs
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/TCFi4u1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+<img src="https://i.imgur.com/JAInfOY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<p>
+<p>
+<img src="https://i.imgur.com/1RtrcPH.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <p>
 It is very important to make sure both VMs communicate with each other. First, communication was tested with a "ping -t" command and it failed. It sent back a "request timed out" response. Next, I enabled ICMPv4 protocol in the local windows firewall. After doing that, I tested the connection again and the a "ping -t" command and it was a success! A reply was received.
 </p>
@@ -49,9 +51,9 @@ It is very important to make sure both VMs communicate with each other. First, c
 <p>
 INSTALL ACTIVE DIRECTORY
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/cl8gdBD.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/1CNKA1K.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Install Active Directory Domain Services. Then setup a new forest as mydomain.com.
@@ -59,9 +61,9 @@ Install Active Directory Domain Services. Then setup a new forest as mydomain.co
 <br />
 
 <p>
-CREATE AN ADMIN AND NORMAL USER ACCOUNG IN ACTIVE DIRECTORY
+CREATE AN ADMIN AND NORMAL USER ACCOUNT IN ACTIVE DIRECTORY
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/djfY8bV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Created a normal user named Jane Doe. Then added her to the ADMINS group.
@@ -71,9 +73,9 @@ Created a normal user named Jane Doe. Then added her to the ADMINS group.
 <p>
 JOIN CLIENT1 TO DOMAIN (MYDOMAIN.COM)
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/H5PxIMS.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/GAkNG1F.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 From the Azure portal, I set Client1's DNS settings to the DC's private IP address.
@@ -83,7 +85,7 @@ From the Azure portal, I set Client1's DNS settings to the DC's private IP addre
 <p>
 SETUP REMOTE DESKTOP FOR NON-ADMINISTRATIVE USERS ON CLIENT 1
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/uNykIm6.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 </p>
 <br />
@@ -91,7 +93,7 @@ SETUP REMOTE DESKTOP FOR NON-ADMINISTRATIVE USERS ON CLIENT 1
 <p>
 CREATE MULTIPLE ADDITIONAL USERS TO CREATE A DATABASE OF USERS
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/BSPCZYM.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 </p>
 To create 10000 additional randomly name uses, I used a script that would execute the solution.
