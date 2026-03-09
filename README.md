@@ -17,14 +17,14 @@ This tutorial outlines the process of fully provisioning user accounts, assignin
 - Windows 11
 
 
-<h2>Users Created</h2>
+<h2>Assigned Licenses</h2>
 
 <p>
 <img width="1724" height="862" alt="image" src="https://github.com/user-attachments/assets/e5f6f8d6-6980-4159-8399-5e6db404a780" />
 
 </p>
 <p>
-Created a new user named Chris Walker.
+Assigned P2 license to user Chris Walker.
 </p>
 <br />
 
@@ -33,7 +33,7 @@ Created a new user named Chris Walker.
 
 </p>
 <p>
-Created a new user named Jordan Lee.
+Assigned P2 license to user Jordan Lee.
 </p>
 <br />
 
